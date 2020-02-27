@@ -34,6 +34,8 @@ h1{
 /*Formato de la ventana que contiene imagenes*/
 #ventana {color: #1D64A6;
 }
+
+
 header .main footer {width: 90%;
    max-width: 1000px;
    background: #fff;
@@ -45,7 +47,11 @@ header .main footer {width: 90%;
    }
 
 
-/*Formato del banner*/
+
+
+
+
+/*Formato del banner-animación*/
 .banner{
    width: 90%;
    height: 200px;
@@ -91,7 +97,7 @@ header nav ul li a {
 
     width: 50%;
     height: auto;
-   /* float: left;*/
+    /*float: left;*/
    margin-left: 306px;
     margin-bottom: 20px;
 }
@@ -102,7 +108,7 @@ header nav ul li a {
     height: 0; 
     overflow: hidden;
     }
-     
+     /*Position del video y audio*/
     .video-container iframe,
     .video-container object,
     .video-container embed {
@@ -125,14 +131,56 @@ header nav ul li a {
 /*Formato texto audio*/
     h4{
         text-align: center;
+       
     }
-    
-
-
-
-
-
+/*Formato de las imagenes principales index*/
+@keyframes frecuencia{
+    0%, 15%{
+        background-image: url(../imagenes/img01.jpg);
+        opacity: 1;
+    }
+    16%, 18% {
+        opacity: 1;
+    }
+    19%, 30% {
+        background-image: url(../imagenes/img02.jpg);
+        opacity: 1;
+    }
+    31%, 50% {
+        background-image: url(../imagenes/img03.png);
+        opacity: 1;
+    }
+    51%, 70% {
+        background-image: url(../imagenes/img04.jpg);
+        opacity: 1;
+    }
+    71%, 75% {
+        opacity: 0.1;
+    }
+    76%, 80%{
+        opacity: 1;
+        background-image: url(../imagenes/img05.jpg);
+        }
+        81%, 100%{
+            opacity: 1;
+            background-image: url(../imagenes/img06.jpg);
+            }
+        }
+             
+/*Formato de titulo "Lugares Turisticos*/
+            h1{
+                text-align: center;
+                font-size: 30px;
+                font-family: arial;
+                margin-top: 80px;
+                color:blue;
+                text-shadow:  0px 0px 6px blue; 
+             }
+             
+            
+}    
    
+/*Formato contenedor de los formularios*/  
  .contenedor{
     width: 80%;
     max-width: 1000px;
@@ -147,6 +195,7 @@ header nav ul li a {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+/*Formato de las cajas textos formulario*/
 form .input__text{
     width: 100%;
     border: 1px solid #ccc;
@@ -162,7 +211,7 @@ form .input__text{
     outline: medium none;
 }
 
-
+/*Formato borde los form*/
 form .input__text:focus{
     border: 1px solid #084cdf;
 }
@@ -183,7 +232,8 @@ form .input__text:focus{
   }
 
 
-  
+ 
+/*Formato de animación imagenes*/
 .slider {
     width: 60%;
     margin: auto;
@@ -233,9 +283,8 @@ div ul li img:hover{
 
 }
  
-  
-     /*Columnas de información del section de la pagina contacto*/
-     .col3 {
+/*Columnas de información del section de la pagina contacto*/
+    .col3 {
         width: 48%;
         height: 300px;
         background-color: rgb(227, 204, 179);;
@@ -246,13 +295,11 @@ div ul li img:hover{
         transition: border-radius 2s ease;
         
     }
-    
-    
-      .col3:hover {
+    .col3:hover {
         border-radius:15px;
       }
     
-        
+     /*Columnas de información de la pagina contactos*/   
     .col4 {
         width: 43%;
         height: 500px;
@@ -265,22 +312,28 @@ div ul li img:hover{
         border: 1px solid white;
         transition: border 1s ease;
         margin-left: 250px;
-
-        
-    
     }
+        
     /*efecto para cuando se coloque encima del contenedor muestre unas lineas*/
     .col4:hover {
         border: 4px dotted #333;
       }
-      .table{
+
+    /*Columnas de informacion del section de la pagina contacto horario*/
+
+.informacion {
+    width: 100%;
+    margin: 0 0 0 1%;
+  
+}
+.table{
         border: 0px solid white;
         border-collapse: separate;
         margin: 0;
         padding: 0;
         width: 100%;
-        /*table-layout: fixed;*/
-        color: white;;
+        table-layout: fixed;
+        color: blue;
         }
         /*Le da un tamaño a la letra dentro de la tabla */
         .table caption{
@@ -308,22 +361,16 @@ div ul li img:hover{
         }
         
 
-    /*Columnas de informacion del section de la pagina contacto horario*/
-
-.informacion {
-    width: 100%;
-    margin: 0 0 0 1%;
-  
-}
+/*Formato texto que en la tabla contactenos*/    
 p, h2 {
     color: rgb(31, 9, 156);
-    font-size: 26px;
+    font-size: 20px;
     position:center;  
 
     text-align: center;
     margin: 10px;
 }
-
+/*Formato de los footer de las paginas*/
 footer {
     width: 100%;
     height: 100px;
@@ -352,7 +399,7 @@ footer {
 
 }
 
-
+/*Formato del login del user*/
 .usuario, .contra{
     outline: none;
     padding: 20px;
@@ -365,51 +412,8 @@ footer {
 
 
 
+/*Formato parte logo*/
 
-/*Formato de las imagenes principales index*/
-@keyframes frecuencia{
-    0%, 15%{
-        background-image: url(../imagenes/img01.jpg);
-        opacity: 1;
-    }
-    16%, 18% {
-        opacity: 1;
-    }
-    19%, 30% {
-        background-image: url(../imagenes/img02.jpg);
-        opacity: 1;
-    }
-    31%, 50% {
-        background-image: url(../imagenes/img03.png);
-        opacity: 1;
-    }
-    51%, 70% {
-        background-image: url(../imagenes/img04.jpg);
-        opacity: 1;
-    }
-    71%, 75% {
-        opacity: 0.1;
-    }
-    76%, 80%{
-        opacity: 1;
-        background-image: url(../imagenes/img05.jpg);
-        }
-        81%, 100%{
-            opacity: 1;
-            background-image: url(../imagenes/img06.jpg);
-            }
-            /*Formato de titulo "Lugares Turisticos*/
-            h1{
-                text-align: center;
-                font-size: 40px;
-                font-family: arial;
-                margin-top: 80px;
-                color:black;
-                text-shadow:  0px 0px 6px blue; 
-             }
-             
-            
-}    
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     div ul li img:hover{
         width: 100px; 
@@ -430,17 +434,17 @@ footer {
         text-align: center;
     }
      /*Columnas de informacion del section de la pagina contacto*/
-    .col4 {
+    /*.col4 {
         width: 40%;
         height: 400px;
         background-color: rgb(130, 192, 221);
         float: left;
-       /* margin: 0 0 0 0;*/
-       /* text-align: center;*/
-    }
+       / margin: 0 0 0 0;
+        text-align: center;
+    }*/
 
    
-        /*Columnas de informacion del section de la pagina contacto horario*/
+/*Columnas de informacion del section de la pagina contacto horario*/
    
     .informacion {
         width: 100%;
@@ -489,8 +493,8 @@ footer {
         height: 400px;
         background-color: rgb(130, 192, 221);
         float: left;
-       /* margin: 0 0 0 0;*/
-       /* text-align: center;*/
+        margin: 0 0 0 0;
+       text-align: center;
       
     }
 
@@ -502,7 +506,9 @@ footer {
         margin: 0 0 0 1%;
       
     }
-
+     
+ 
+/*Formato footer*/
  
     footer {
         margin-top: 1000px;
@@ -511,15 +517,12 @@ footer {
         margin-top: 10px;
     }
 
-    p, h2 {
+  p, h2 {
         color: rgb(31, 9, 156);
         font-size: 12px;
        
     }
 } 
-
-
-
 @media (min-width: 320px) and (max-width: 480px) {
     div ul li img:hover{
         width: 100px; 
@@ -550,16 +553,10 @@ footer {
        /* text-align: center;*/
     }
 
-   
-        /*Columnas de informacion del section de la pagina contacto horario*/
-   
-    .informacion {
-        width: 100%;
-        margin: 0 0 0 1%;
-      
-    }
 
- 
+  
+
+ /*fromato del footer*/
     footer {
         margin-top: 150px;
     }
@@ -574,8 +571,15 @@ footer {
     }
 
 }
+
 @media (max-width: 767px) and (min-width: 481px){
 .contafooter {
     margin-top: 1000px;
 }
+
 }
+
+
+
+
+

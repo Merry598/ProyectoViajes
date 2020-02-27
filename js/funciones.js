@@ -15,12 +15,12 @@ function soloLetras(e) {
     }
 
     if(letras.indexOf(tecla) == -1 && !tecla_especial){
-/*alert('Tecla no aceptada');*/
+alert('En este campo no se permiten números, sólo letras.');
         return false;
       }
 }
 
-//Se utiliza para que el campo de texto solo acepte numeros
+//Se utiliza para que el campo de texto solo acepte números
 function SoloNumeros(evt){
     if(window.event){//asignamos el valor de la tecla a keynum
      keynum = evt.keyCode; //IE
@@ -33,7 +33,7 @@ function SoloNumeros(evt){
      return true;
     }
     else{
-  /*alert('Tecla no aceptada');*/
+  alert('No se aceptan letras,sólo números');
      return false;
     }
    }
