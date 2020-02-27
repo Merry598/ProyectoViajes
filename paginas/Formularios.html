@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="../css/formularios.css">
+    
+    <link rel="stylesheet" href="../css/style.css">    
+    <script type="text/javascript" src="../js/funciones.js"></script>
+</head>
+<body>
+    
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <div><img src="../imagenes/logo01.png" class="logo"   alt=""></div>
+                </td>
+                <td style="width: 100%;">
+                    <div class="banner"></div>
+                </td>
+                <td>
+                    <div><img src="../imagenes/logo02.png" class="logo" alt=""></div>
+                </td>
+            </tr>
+        </table>
+        
+        <h1>Lugares Turísticos</h1> 
+       <!--Aquí van imagenes,logotipos,menus-->
+          <nav >
+             <ul>
+                   <li ><a href="../index.html">Inicio</a></li>
+                   <li ><a href="Formularios.html">Formularios</a></li>
+                   <li ><a href="Contactos.html">Contactos</a></li>
+                   <li ><a href="login.html">Login</a></li>
+                    
+                </ul>
+            </nav>   
+        </header>
+      <h1>Digite la información solicitada en el siguiente formulario.</h1>
+    <form name="frmformulario" id="idformulario", method="GET" autocomplete="off" >
+    <section>
+        <div class="contenedor">
+        <form action="" method="POST" name="contacto" id="contacto">
+            <div class="form-group">
+                <input type="text" name="nombre" placeholder="Nombre*" class="input__text" required onkeypress=" return soloLetras(event);" required="" pattern="[a-zA-Z]+">
+                <input type="text" name="apellido" placeholder="Apellido*" class="input__text"  required="" pattern="[a-zA-Z]+" >
+            </div>
+    
+    
+            <div class="form-group">
+            <input type="text" name="cedula" placeholder="Cédula" class="input__text" required=""  pattern="[0-9]+">
+                <input type="text" name="num_telefono" placeholder="Número Teléfono*" class="input__text"required=""  required onkeypress=" return SoloNumeros(event);"  pattern="[0-9]+">
+            </div>
+            <div class="form-group">
+            <input type="text" name="email" placeholder="Email*" class="input__text" required="">
+            <input type="date" name="fecha_nacimiento" placeholder="Fecha Nacimiento" class="input__text">
+    
+            </div>
+            <div class="form-group">
+                <input type="password" name="contrasenna" placeholder="Contraseña*" class="input__text" required="">
+                <input type="password" name="confcontrasenna" placeholder="Confirmar Contraseña" class="input__text" required="">
+        
+                </div>
+                <div class="form-group">
+                    <input type="text" name="pais" placeholder="País" class="input__text" >
+                    <input type="text" name="Pais_residencia " placeholder="Pais de Residencia* " class="input__text" >
+            
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="edad" placeholder="Edad" class="input__text" >
+                        <input type="password" name="fecha_acordada" placeholder="PIN*" class="input__text" required="" maxlength="6"  required onkeypress=" return SoloNumeros(event);"  pattern="[0-9]+">
+                
+                        </div>
+                        
+ 
+            <div class="form-group">
+            
+              <input type="submit" name="guardar" value="Guardar" class="btnaceptLo">
+              
+            </div>
+        </form>
+        </div>
+        <footer class="contafooter2">
+            <p>©2020|Sin Fronteras Tours</p>
+          
+        </footer>
+</body>
+</html>

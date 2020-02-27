@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo{
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+}
+    
+/*Formato del fondo página*/
+body{
+    background-image: url(../imagenes/fondo01.jpg);
+     background-position: center;
+     background-repeat: no-repeat; 
+     background-attachment: fixed;
+     background-size: cover; 
+}
+/*Formato del titulo Lugares Turisticos*/
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: arial;
+    margin-top: 80px;
+    color: blue;
+    text-shadow:  0px 0px 6px black; 
+   
+}
+
+/*Formato de la ventana que contiene imagenes*/
+#ventana {color: #1D64A6;
+}
+header .main footer {width: 90%;
+   max-width: 1000px;
+   background: #fff;
+   margin: auto;
+}
+
+   header table tr td div{
+       border-radius: 15px;
+   }
+
+
+/*Formato del banner*/
+.banner{
+   width: 90%;
+   height: 200px;
+   border: 3px solid blue;
+   margin: auto;
+   background-size: 100% 100%;
+   animation: frecuencia 15s infinite;
+   animation-direction: alternate;
+}
+/*Color del header-menú navegación*/
+header nav{
+   background:#528FD5;
+   overflow: hidden;
+}
+/*Formato botones-lista menú navegación*/
+header nav ul li{
+   list-style: none;
+   float: left;
+}
+
+/*Formato texto-menú navegación*/
+header nav ul li a {
+   padding: 10px 20px;
+   margin: 10px 20px;
+   font-size: 20px;
+   text-decoration: none;
+   background: #3BA7E1;
+   color: white;
+   display: block;
+   box-shadow: 0px 5px 0px #1D64A6;
+   border-radius: 15px;
+   
+   }
+/*Formato del aside-video-audio*/
+.textos {
+    width: 100%;
+    height: 20px;
+    color: black;
+    font-size: 15px;
+    
+}
+#video-responsive, .video{
+
+    width: 50%;
+    height: auto;
+   /* float: left;*/
+   margin-left: 306px;
+    margin-bottom: 20px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 75%;
+    padding-top: 0px; 
+    height: 0; 
+    overflow: hidden;
+    }
+     
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    #audiopla{
+
+        width: 50%;
+        height: auto;
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 400px;
+    
+    }
+    
+/*Formato texto audio*/
+    h4{
+        text-align: center;
+    }
+    
+
+
+
+
+
+   
+ .contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+
+}
+/* Formato de los formularios*/
+   form .form-group{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+form .input__text{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #848688;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    max-width: 30%;
+    margin-right: 10px;
+    outline: medium none;
+}
+
+
+form .input__text:focus{
+    border: 1px solid #084cdf;
+}
+   .btnaceptLo {
+    padding: 10px;
+    color: #fff;
+    background: rgb(3, 113, 163);
+
+    width: 320px;
+    margin: 20px auto;
+    margin-top: 0;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .btnaceptLo:hover {
+    background-color: rgb(7, 142, 204);;
+  }
+
+
+  
+.slider {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: imagenes 20s infinite alternate linear;
+    transform: rotate(360deg);
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+
+    transition: 04s all;
+    
+}
+div ul li img:hover{
+    width: 900px; 
+     
+    
+}
+/*Formato animación de imagenes*/
+
+@keyframes imagenes{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    /*20 x .02  = 4 segundos dura la imagen*/
+    /*tiempo de la transicion de una imagen a otra*/
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    /*5% es 1 segundo */
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+ 
+  
+     /*Columnas de información del section de la pagina contacto*/
+     .col3 {
+        width: 48%;
+        height: 300px;
+        background-color: rgb(227, 204, 179);;
+        float: left;
+        margin: 20px 1% 0 1%;
+        text-align: center;
+        border:0px solid white;
+        transition: border-radius 2s ease;
+        
+    }
+    
+    
+      .col3:hover {
+        border-radius:15px;
+      }
+    
+        
+    .col4 {
+        width: 43%;
+        height: 500px;
+        background-color: rgb(130, 192, 221);
+        /* float: left; */
+        margin: 20px 30px 0 4%;
+        /* margin: 20px 30px 0 1%; */
+        text-align: center;
+        border-radius: 15px;
+        border: 1px solid white;
+        transition: border 1s ease;
+        margin-left: 250px;
+
+        
+    
+    }
+    /*efecto para cuando se coloque encima del contenedor muestre unas lineas*/
+    .col4:hover {
+        border: 4px dotted #333;
+      }
+      .table{
+        border: 0px solid white;
+        border-collapse: separate;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /*table-layout: fixed;*/
+        color: white;;
+        }
+        /*Le da un tamaño a la letra dentro de la tabla */
+        .table caption{
+        
+            font-size: 1.3em;
+        }
+        /*Le da el color dentro de las celdas*/
+        .table tr {
+        
+            background-color: rgba(186, 210, 219, 0.74);
+            border: 1px #ddd;
+            padding: .35em;
+        }
+        /*Le da un espaciado entre las celdas y lo centra*/
+        .table th, table td{
+            padding: .625em;
+            text-align: center;
+        
+        }
+        .table th{
+        
+            font-size: .85em;
+            letter-spacing: .1em;
+            text-transform: uppercase; 
+        }
+        
+
+    /*Columnas de informacion del section de la pagina contacto horario*/
+
+.informacion {
+    width: 100%;
+    margin: 0 0 0 1%;
+  
+}
+p, h2 {
+    color: rgb(31, 9, 156);
+    font-size: 26px;
+    position:center;  
+
+    text-align: center;
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #528FD5;
+    border: 0px solid white;
+    transition:  background-color 2s ease;;
+    margin-top: 600px;/*bajar o subir se le agrega suma baja u se le resta sube */
+
+}
+.contafooter {
+    width: 100%;
+    height: 100px;
+    background-color: #528FD5;
+    border: 0px solid white;
+    transition:  background-color 2s ease;;
+    margin-top: 100px;/*bajar o subir se le agrega suma baja u se le resta sube */
+
+}
+.contafooter2 {
+    width: 100%;
+    height: 100px;
+    background-color: #528FD5;
+    border: 0px solid white;
+    transition:  background-color 2s ease;;
+    margin-top: 100px;/*bajar o subir se le agrega suma baja u se le resta sube */
+
+}
+
+
+.usuario, .contra{
+    outline: none;
+    padding: 20px;
+    display: block; /*se muestre uno debajo del otro*/
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 20px auto;
+  }
+
+
+
+
+/*Formato de las imagenes principales index*/
+@keyframes frecuencia{
+    0%, 15%{
+        background-image: url(../imagenes/img01.jpg);
+        opacity: 1;
+    }
+    16%, 18% {
+        opacity: 1;
+    }
+    19%, 30% {
+        background-image: url(../imagenes/img02.jpg);
+        opacity: 1;
+    }
+    31%, 50% {
+        background-image: url(../imagenes/img03.png);
+        opacity: 1;
+    }
+    51%, 70% {
+        background-image: url(../imagenes/img04.jpg);
+        opacity: 1;
+    }
+    71%, 75% {
+        opacity: 0.1;
+    }
+    76%, 80%{
+        opacity: 1;
+        background-image: url(../imagenes/img05.jpg);
+        }
+        81%, 100%{
+            opacity: 1;
+            background-image: url(../imagenes/img06.jpg);
+            }
+            /*Formato de titulo "Lugares Turisticos*/
+            h1{
+                text-align: center;
+                font-size: 40px;
+                font-family: arial;
+                margin-top: 80px;
+                color:black;
+                text-shadow:  0px 0px 6px blue; 
+             }
+             
+            
+}    
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    div ul li img:hover{
+        width: 100px; 
+         
+        
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+        border-radius: 15px;
+    }
+    .col3 {
+        width: 48%;
+        height: 290px;
+        background-color: rgb(130, 192, 221);
+        float: left;
+        margin: 20px 1% 0 1%;
+        text-align: center;
+    }
+     /*Columnas de informacion del section de la pagina contacto*/
+    .col4 {
+        width: 40%;
+        height: 400px;
+        background-color: rgb(130, 192, 221);
+        float: left;
+       /* margin: 0 0 0 0;*/
+       /* text-align: center;*/
+    }
+
+   
+        /*Columnas de informacion del section de la pagina contacto horario*/
+   
+    .informacion {
+        width: 100%;
+        margin: 0 0 0 1%;
+      
+    }
+
+ 
+    footer {
+        margin-top: 150px;
+    }
+    .contafooter {
+        margin-top: 10px;
+    }
+ 
+    p, h2 {
+        color: rgb(31, 9, 156);
+    
+       
+    }
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape) Screen = 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    div ul li img:hover{
+        width: 100px; 
+         
+        
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+        border-radius: 15px;
+    }
+    .col3 {
+        width: 48%;
+        height: 290px;
+        background-color: rgb(130, 192, 221);
+        float: left;
+        margin: 20px 1% 0 1%;
+        text-align: center;
+    }
+     /*Columnas de informacion del section de la pagina contacto*/
+    .col4 {
+        width: 40%;
+        height: 400px;
+        background-color: rgb(130, 192, 221);
+        float: left;
+       /* margin: 0 0 0 0;*/
+       /* text-align: center;*/
+      
+    }
+
+   
+        /*Columnas de informacion del section de la pagina contacto horario*/
+   
+    .informacion {
+        width: 100%;
+        margin: 0 0 0 1%;
+      
+    }
+
+ 
+    footer {
+        margin-top: 1000px;
+    }
+    .contafooter {
+        margin-top: 10px;
+    }
+
+    p, h2 {
+        color: rgb(31, 9, 156);
+        font-size: 12px;
+       
+    }
+} 
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    div ul li img:hover{
+        width: 100px; 
+         
+        
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+        border-radius: 15px;
+    }
+    /*Formato del banner*/
+    .col3 {
+        width: 48%;
+        height: 290px;
+         background-color: rgb(130, 192, 221);
+        float: left;
+        margin: 20px 1% 0 1%;
+        text-align: center;
+    }
+     /*Columnas de informacion del section de la pagina contacto*/
+    .col4 {
+        width: 40%;
+        height: 400px;
+        background-color: rgb(130, 192, 221);
+        float: left;
+       /* margin: 0 0 0 0;*/
+       /* text-align: center;*/
+    }
+
+   
+        /*Columnas de informacion del section de la pagina contacto horario*/
+   
+    .informacion {
+        width: 100%;
+        margin: 0 0 0 1%;
+      
+    }
+
+ 
+    footer {
+        margin-top: 150px;
+    }
+    .contafooter {
+        margin-top: 10px;
+    }
+
+    p, h2 {
+        color: rgb(31, 9, 156);
+        font-size: 15px;
+       
+    }
+
+}
+@media (max-width: 767px) and (min-width: 481px){
+.contafooter {
+    margin-top: 1000px;
+}
+}
